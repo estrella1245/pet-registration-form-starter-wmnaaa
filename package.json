@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "test": "jest",
+    "start": "servor --reload"
+  },
+  "dependencies": {
+    "chai": "^5.1.0",
+    "hyperform": "^0.12.1",
+    "jsdom": "*",
+    "servor": "^4.0.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@types/node": "^20.11.28",
+    "chai": "*",
+    "jsdom": "*",
+    "mocha": "*",
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "@types/prompt-sync": "^4.2.3",
+    "babel-jest": "*",
+    "jest": "*"
+  },
+  "type": "module"
+}
