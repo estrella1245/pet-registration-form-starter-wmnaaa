@@ -35,23 +35,29 @@
            class="form-control" 
            id="pet-name"
            placeholder="Fido"
+           maxlength=20
+           required
            />
     <small class="form-text text-muted">Required. Must contain up to 20 alphabetical characters</small>  
     
     <label for="pet-age-input-group">Pet's age</label>
     <!--TODO: Make this field a required number and make the input to be at least 1 and at most 15 -->
-    <input type="text" 
+    <input type="number" 
            class="form-control" 
            id="pet-age"
-           placeholder="5" />
+           placeholder="5"
+           min=1
+           max=15
+           required />
     <small class="form-text text-muted">Required. 1 year old minimum age and 15 years old maximum age</small>
     
     <label for="owner-email-address-group">Email address</label>
     <!--TODO: Make this input an email input, make the place holder "abc@xyz" and make it required -->
-    <input type="text" 
+    <input type="email" 
            class="form-control" 
            id="email-address" 
-           placeholder=""
+           placeholder="abc@xyz"
+           required
            />
     <small class="form-text text-muted">Required. Must contain a valid email address</small>       
     
@@ -61,6 +67,8 @@
            class="form-control" 
            id="phone-number"
            placeholder="XXX-XXX-XXXX"
+           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+           required
            />
     <small class="form-text text-muted">Required. Must contain numbers and dashes in the format of XXX-XXX-XXXX</small>        
     
